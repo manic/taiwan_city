@@ -15,9 +15,6 @@ module TaiwanCity
       children.each_key do |id|
         result.push [ children[id][:text], id]
       end
-
-      #sort
-      result.sort! {|a, b| a[1] <=> b[1]}
       result
     end
 
